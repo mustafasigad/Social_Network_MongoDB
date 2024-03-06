@@ -27,16 +27,27 @@ Once the server is running, you can test the API routes using a tool like Insomn
     GET /api/users - Get all users
     GET /api/users/:userId - Get a single user by ID
     POST /api/users - Create a new user
+     {
+              "username": "lernantino",
+              "email": "lernantino@gmail.com"
+    }
     PUT /api/users/:userId - Update a user by ID
     DELETE /api/users/:userId - Delete a user by ID
 
 ####Thought Routes
 
     GET /api/thoughts - Get all thoughts
+   
     GET /api/thoughts/:thoughtId - Get a single thought by ID
     POST /api/thoughts - Create a new thought
+      {
+        "thoughtText": "Here's a cool thought...",
+        "username": "lernantino",
+       
+   }
     PUT /api/thoughts/:thoughtId - Update a thought by ID
     DELETE /api/thoughts/:thoughtId - Delete a thought by ID
+
 
 ##Reaction Routes
 
@@ -63,4 +74,5 @@ Git User link: https://github.com/mustafasigad
 
 Email: mus.sigad@gmail.com  
 
-Video link : https://drive.google.com/file/d/1fHfdLUAbVETAapaU-IG-aOmdm8kP8m8T/view
+Video link : https://drive.google.com/file/d/1y3AtFPtHwkvIt6gGXJEoQCVQNuAk_a4e/view
+ 
