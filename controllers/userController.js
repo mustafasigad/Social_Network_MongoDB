@@ -96,64 +96,9 @@ module.exports = {
       console.error(err);
       res.status(500).json(err);
     }
+  },
+
+ 
   }
 
 
-
-  //     if (!course) {
-  //       return res.status(404).json({
-  //         message: 'Student deleted, but no courses found',
-  //       });
-  //     }
-
-  //     res.json({ message: 'Student successfully deleted' });
-  //   } catch (err) {
-  //     console.log(err);
-  //     res.status(500).json(err);
-  //   }
-  // },
-
-  // // Add an assignment to a student
-  // async addAssignment(req, res) {
-  //   console.log('You are adding an assignment');
-  //   console.log(req.body);
-
-  //   try {
-  //     const student = await Student.findOneAndUpdate(
-  //       { _id: req.params.studentId },
-  //       { $addToSet: { assignments: req.body } },
-  //       { runValidators: true, new: true }
-  //     );
-
-  //     if (!student) {
-  //       return res
-  //         .status(404)
-  //         .json({ message: 'No student found with that ID :(' });
-  //     }
-
-  //     res.json(student);
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-  // },
-  // // Remove assignment from a student
-  // async removeAssignment(req, res) {
-  //   try {
-  //     const student = await Student.findOneAndUpdate(
-  //       { _id: req.params.studentId },
-  //       { $pull: { assignment: { assignmentId: req.params.assignmentId } } },
-  //       { runValidators: true, new: true }
-  //     );
-
-  //     if (!student) {
-  //       return res
-  //         .status(404)
-  //         .json({ message: 'No student found with that ID :(' });
-  //     }
-
-  //     res.json(student);
-  //   } catch (err) {
-  //     res.status(500).json(err);
-  //   }
-  // },
-};
